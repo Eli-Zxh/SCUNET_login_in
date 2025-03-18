@@ -10,15 +10,15 @@ browser = webdriver.Edge()
 browser.get("http://192.168.2.135")
 
 # 用户信息
-user_name = '2021151620070'
-user_pwd = '232693'
+user_name = '' #输入你的学号
+user_pwd = '' #输入你的密码
 service_typelist = {
     '校园网': 'internet',
     '中国联通': '联通入口',
     '中国电信': '电信入口',
     '中国移动': '移动入口'
 }
-target_service_value = '校园网'  # 选择校园网作为测试
+target_service_value = '校园网'  # 这里选择你想使用的服务类型
 
 try:
     # 等待用户名输入框可见并输入（通过 `ID` 定位）
