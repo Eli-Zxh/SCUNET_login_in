@@ -1,6 +1,6 @@
 ### 🤖 Assistant
 
-```markdown
+
 # SCUNET 校园网自动登录脚本
 
 这是一个基于 Selenium 的自动登录脚本，用于自动登录 SCUNET 校园网。通过输入用户名、密码以及选择服务类型，脚本可以自动化完成登录过程，适合需要频繁登录校园网的用户。
@@ -23,8 +23,7 @@
 
 1. **克隆项目**：
    ```bash
-   git clone https://github.com/your-username/SCUNET-AutoLogin.git
-   cd SCUNET-AutoLogin
+   git clone git@github.com:Eli-Zxh/SCUNET_login_in.git
    ```
 
 2. **安装依赖**：
@@ -41,6 +40,7 @@
    ```python
    user_name = '你的用户名'
    user_pwd = '你的密码'
+   target_service_value = '校园网'  # 选择你使用的服务类型
    ```
 
 5. **运行脚本**：
@@ -57,7 +57,7 @@
 ## 项目结构
 
 ```
-SCUNET-AutoLogin/
+SCUNET_login_in/
 ├── SCUNET.py           # 主脚本文件
 ├── README.md           # 项目介绍
 ```
@@ -67,10 +67,11 @@ SCUNET-AutoLogin/
 - 确保用户名和密码正确。
 - WebDriver 版本必须与浏览器版本匹配。
 - 如果登录页面结构发生变化，可能需要调整脚本中的元素定位方式。
+- 目前没完成图形验证码功能。
 
 ## 贡献
 
-欢迎提交 Issue 或 PR 来改进此项目。如果你有任何问题或建议，请通过 GitHub Issues 联系我。
+欢迎提交 Issue 或 PR 来改进此项目。如果你有任何问题或建议，请通过 1796313642@qq.com 联系我。
 
 ## 许可证
 
