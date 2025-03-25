@@ -28,7 +28,43 @@
 
 2. **安装依赖**：
    ```bash
-   pip install selenium
+   pip install requests
+   ```
+
+3.**修改脚本**：
+   打开 `request_way.py` 文件，填写你的校园网用户名和密码：
+   ```python
+   user_name = '你的用户名'
+   user_pwd = '你的密码'
+   target_service_value = '校园网'  # 选择你使用的服务类型
+   ```
+
+4.**运行脚本**：
+   ```bash
+   python request_way.py
+   ```
+
+5.**设置自动运行脚本**：
+   以linux为例：
+   ```bash
+   crontab -e
+   */5 * * * * /usr/bin/python3 /path/to/your/SCUNET_requests.py # 在文件末尾添加以下内容，设置每五分钟自动执行
+   #保存并退出
+   ```
+   Windows系统可以自行设置计划任务程序
+
+## 如果你需要用到selenium控制浏览器
+
+（不太建议，奇怪的bug，配置复杂）
+
+1. **克隆项目**：
+   ```bash
+   git clone git@github.com:Eli-Zxh/SCUNET_login_in.git
+   ```
+
+2. **安装依赖**：
+   ```bash
+   pip install requests
    ```
 
 3. **配置 WebDriver**：
@@ -58,16 +94,19 @@
 
 ```
 SCUNET_login_in/
-├── SCUNET.py           # 主脚本文件
+├── SCUNET.py           # 使用selenium的备份
+├── request_way.py      # 主脚本文件
 ├── README.md           # 项目介绍
+├── LICENSE             # MIT证书
 ```
 
 ## 注意事项
 
 - 确保用户名和密码正确。
-- WebDriver 版本必须与浏览器版本匹配。
-- 如果登录页面结构发生变化，可能需要调整脚本中的元素定位方式。
-- 目前没完成图形验证码功能。
+- 如果使用了浏览器登录：
+   - WebDriver 版本必须与浏览器版本匹配。
+   - 如果登录页面结构发生变化，可能需要调整脚本中的元素定位方式。
+   - 目前没完成图形验证码功能。
 
 ## 贡献
 
