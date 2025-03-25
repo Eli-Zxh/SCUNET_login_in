@@ -23,7 +23,7 @@
 
 1. **克隆项目**：
    ```bash
-   git clone git@github.com:Eli-Zxh/SCUNET_login_in.git
+   git clone https://github.com/Eli-Zxh/SCUNET_login_in.git
    ```
 
 2. **安装依赖**：
@@ -59,7 +59,7 @@
 
 1. **克隆项目**：
    ```bash
-   git clone git@github.com:Eli-Zxh/SCUNET_login_in.git
+   git clone https://github.com/Eli-Zxh/SCUNET_login_in.git
    ```
 
 2. **安装依赖**：
